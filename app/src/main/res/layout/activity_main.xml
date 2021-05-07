@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/topo"
+        android:layout_width="0dp"
+        android:layout_height="104dp"
+        android:contentDescription="imagemTopo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:singleLine="false"
+        android:text="CESAR School | Queremos saber a sua opinião"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#DD3C3C"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topo" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <LinearLayout
+            android:id="@+id/p1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:text="Caso queira se identificar, favor informar seu nome"
+                android:textAlignment="center"
+                android:textColor="#DD3C3C" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Nome"
+               ></EditText>
+
+            <TextView
+                android:id="@+id/q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="Como você avalia a QUALIDADE das aulas da disciplina?
+"
+                android:textAlignment="textStart"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#DD3C3C"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Péssima" />
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ruim
+" />
+
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal
+" />
+
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ótima
+" />
+
+            <CheckBox
+                android:id="@+id/cb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excelente
+" />
+
+            <CheckBox
+                android:id="@+id/cb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não assisti
+" />
+
+
+            <TextView
+                android:id="@+id/q21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="Como você avalia o seu grau de SATISFAÇÃO com a alternativa de aula remota durante o período da quarentena?
+
+"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#DD3C3C"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cb21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Péssima" />
+
+            <CheckBox
+                android:id="@+id/cb22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ruim
+" />
+
+            <CheckBox
+                android:id="@+id/cb23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal
+" />
+
+            <CheckBox
+                android:id="@+id/cb24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ótima
+" />
+
+            <CheckBox
+                android:id="@+id/cb25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excelente
+" />
+
+            <CheckBox
+                android:id="@+id/cb27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não assisti
+" />
+
+            <TextView
+                android:id="@+id/q31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="Você concorda em manter o formato remoto enquanto não estivermos seguros com o retorno presencial?"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#DD3C3C"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cb31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concordo em manter o formato remoto.
+" />
+
+            <CheckBox
+                android:id="@+id/cb32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não quero mais ter aulas remotas. Prefiro só retomar o curso quando estivermos em segurança.
+" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="Em uma escala de 0 a 10, o quanto você recomendaria o curso “Desenvolvimento de Aplicações Móveis” para um amigo referente ao que você vivenciou “até o momento”?"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#DD3C3C"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/score_spinner"
+                android:layout_width="128dp"
+                android:layout_height="24dp"
+                android:entries="@array/score_spinner"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_coment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="Gostaria de comentar mais alguma coisa?"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#DD3C3C"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/et_coment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"></EditText>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:backgroundTint="#372AE7"
+        android:onClick="sendMessage"
+        android:text="Enviar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
